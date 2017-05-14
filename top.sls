@@ -4,3 +4,4 @@ base:
   'client1':
     - openssh
     - users
+    - packages
