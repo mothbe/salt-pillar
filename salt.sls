@@ -10,12 +10,7 @@ salt:
     gitfs_env_whitelist:
       - base
     gitfs_remotes:
-      - git://github.com/mothbe/openssh-formula.git
       - git://github.com/mothbe/salt-formula.git
-      - git://github.com/saltstack-formulas/users-formula.git:
-        - saltenv:
-          - base:
-            - ref: 27019e0f94892bc8db0bd28790788325339da2e0
     file_roots:
       base:
         - /srv/salt
@@ -28,3 +23,22 @@ salt:
         - /srv/dev/pillar
   minion:
     master: localhost
+
+salt_formulas:
+  git_opts:
+    default:
+      baseurl: https://github.com/mothbe
+      basedir: /srv/formulas
+      update: False
+      options:
+        rev: master
+  basedir_opts:
+    makedirs: True
+    user: root
+    group: root
+    mode: 755
+  list:
+    base:
+      - openssh-formula
+      - users-formula
+  
