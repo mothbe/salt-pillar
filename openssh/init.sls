@@ -1,5 +1,7 @@
 sshd_config:
-  Port: 22
+  Port:
+    - 22
+    - 2233
   Protocol: 2
   PermitRootLogin: 'yes'
   PasswordAuthentication: 'no'
@@ -7,3 +9,4 @@ sshd_config:
   MaxAuthTries: 6
   PermitEmptyPasswords: 'no'
   PrintLastLog: 'yes'
+  PrintMotd: 'no'
