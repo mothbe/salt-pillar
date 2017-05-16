@@ -4,5 +4,5 @@ base:
   'client1':
     - groups.web
     - openssh
-    - users
+    - users.root
     - packages
