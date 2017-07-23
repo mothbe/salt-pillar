@@ -1,7 +1,7 @@
 base:
   '*':
     - salt
-  'client1':
+  'minion*':
     - groups.web
     - openssh
     - users.root
