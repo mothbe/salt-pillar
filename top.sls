@@ -6,4 +6,4 @@ base:
     - openssh
     - users.root
     - packages
-    - cron
+    - crons
