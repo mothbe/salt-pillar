@@ -1,8 +1,7 @@
-crons:
-  test1:
-    name: /usr/local/minutes
+cron_jobs_enabled:
+  '/usr/local/minutes':
     user: root
-
-  test2:
-    name: /usr/local/test2
+    minute: 2
+  '/usr/local/test2':
     user: root
+    minute: 1
